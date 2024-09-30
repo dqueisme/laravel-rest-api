@@ -15,8 +15,8 @@ class {{ class }} extends RestResource
 
     /**
      * The exposed fields that could be provided
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<string>
      */
     public function fields(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
@@ -27,8 +27,8 @@ class {{ class }} extends RestResource
 
     /**
      * The exposed relations that could be provided
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<\Lomkit\Rest\Relations\Relation>
      */
     public function relations(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
@@ -37,8 +37,8 @@ class {{ class }} extends RestResource
 
     /**
      * The exposed scopes that could be provided
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<string>
      */
     public function scopes(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
@@ -47,8 +47,8 @@ class {{ class }} extends RestResource
 
     /**
      * The exposed limits that could be provided
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<int>
      */
     public function limits(\Lomkit\Rest\Http\Requests\RestRequest $request): array
     {
@@ -61,8 +61,8 @@ class {{ class }} extends RestResource
 
     /**
      * The actions that should be linked
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<\Lomkit\Rest\Actions\Action>
      */
     public function actions(\Lomkit\Rest\Http\Requests\RestRequest $request): array {
         return [];
@@ -70,8 +70,8 @@ class {{ class }} extends RestResource
 
     /**
      * The instructions that should be linked
-     * @param RestRequest $request
-     * @return array
+     *
+     * @return array<\Lomkit\Rest\Instructions\Instruction>
      */
     public function instructions(\Lomkit\Rest\Http\Requests\RestRequest $request): array {
         return [];
